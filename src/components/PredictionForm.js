@@ -16,7 +16,7 @@ function PredictionForm({ onNewPrediction }) {
       };
 
       //const response = await fetch("http://localhost:5000/predict", {
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/predict`, {
+      const response = await fetch("https://5b42-190-103-191-5.ngrok-free.app/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
